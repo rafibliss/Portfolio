@@ -4,7 +4,7 @@ import { skills } from "@/lib/data";
 export default function Skills() {
   return (
     <Section id="skills" title="Skills" intro="The tools I use to design, build and ship web apps." tone="soft">
-      <div className="grid gap-6 md:grid-cols-3">
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {skills.map((group) => (
           <div key={group.category} className="rounded-3xl bg-peach-50 p-6 shadow-sm ring-1 ring-peach-200">
             <h3 className="font-display text-xl font-bold text-olive-800">{group.category}</h3>

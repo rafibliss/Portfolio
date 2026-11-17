@@ -14,7 +14,7 @@ export default function Hero() {
           <h1 className="hero-in font-display text-5xl font-extrabold leading-[1.02] tracking-tight text-peach-50 sm:text-6xl lg:text-7xl" style={{ animationDelay: ".08s" }}>
             <TypeName text={profile.name} />
           </h1>
-          <p className="hero-in mt-4 inline-block rounded-full bg-peach-300 px-4 py-1.5 font-semibold text-olive-900" style={{ animationDelay: ".16s" }}>
+          <p className="hero-in mt-4 inline-block rounded-full bg-peach-300 px-4 py-1.5 text-base font-semibold text-olive-900 sm:text-lg" style={{ animationDelay: ".16s" }}>
             {profile.role}
           </p>
           <p className="hero-in mt-6 max-w-md text-lg leading-relaxed text-peach-100/90" style={{ animationDelay: ".24s" }}>

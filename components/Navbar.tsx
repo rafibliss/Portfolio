@@ -19,7 +19,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-peach-200 bg-peach-50/90 backdrop-blur">
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5" aria-label="Main">
         <Logo />
-        <ul className="hidden items-center gap-1 md:flex">
+        <ul className="hidden items-center gap-1 lg:flex">
           {links.map((l) => (
             <li key={l.label}>
               <Link href={l.href} className="rounded-full px-3.5 py-2 text-sm font-medium text-olive-800 transition hover:bg-peach-200">
@@ -34,7 +34,7 @@ export default function Navbar() {
           </li>
         </ul>
         <button
-          className="grid h-10 w-10 place-items-center rounded-lg text-olive-800 md:hidden"
+          className="grid h-10 w-10 place-items-center rounded-lg text-olive-800 lg:hidden"
           onClick={() => setOpen((o) => !o)}
           aria-expanded={open}
           aria-controls="mobile-menu"
@@ -44,7 +44,7 @@ export default function Navbar() {
         </button>
       </nav>
       {open && (
-        <ul id="mobile-menu" className="border-t border-peach-200 bg-peach-50 px-5 py-3 md:hidden">
+        <ul id="mobile-menu" className="border-t border-peach-200 bg-peach-50 px-5 py-3 lg:hidden">
           {links.map((l) => (
             <li key={l.label}>
               <Link href={l.href} onClick={() => setOpen(false)} className="block rounded-lg px-3 py-3 font-medium text-olive-800 hover:bg-peach-100">
