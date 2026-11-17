@@ -37,7 +37,7 @@ export default function Hero() {
             <div aria-hidden className="absolute left-4 top-4 h-full w-full border-2 border-peach-300/30 bg-olive-700/40" />
             {/* Sharp main frame with crisp peach border and soft glow */}
             <div className="relative rounded-none border-2 border-peach-300 bg-peach-100 p-2 shadow-[0_0_44px_-8px_rgba(249,190,155,0.35)]">
-              <div className="relative aspect-[4/5] overflow-hidden rounded-none">
+              <div className="relative aspect-4/5 overflow-hidden rounded-none">
                 <Image src="/rafi.jpg" alt="Portrait of MD Rafi Al Islam" fill priority sizes="(min-width: 768px) 384px, 90vw" className="object-cover object-top" />
               </div>
             </div>
